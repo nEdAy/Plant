@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageSwitcher
+            android:id="@+id/imageSwitcher1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ebeaea" >
+        </ImageSwitcher>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:layout_weight="25"
+                android:background="#b50202" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="3dp"
+                android:layout_weight="25"
+                android:background="#ffffff" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:layout_weight="25"
+                android:background="#ebeaea" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="3dp"
+                android:layout_weight="25"
+                android:background="#ffffff" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:layout_weight="25"
+                android:background="#ebeaea" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="3dp"
+                android:layout_weight="25"
+                android:background="#ffffff" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:layout_weight="25"
+                android:background="#ebeaea" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/solarsystem" />
+
+</LinearLayout>

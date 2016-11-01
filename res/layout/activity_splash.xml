@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_bg"
+    tools:context=".SplashActivity" >
+
+    <View
+        android:id="@+id/activity_logo_center"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/activity_logo_gif"
+        android:layout_width="91.0dip"
+        android:layout_height="72.0dip"
+        android:layout_above="@id/activity_logo_center"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/activity_logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_logo_center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo_name"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

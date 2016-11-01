@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_start"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical" >
+
+        <com.xpple.plant.view.RoundImageView
+            android:id="@+id/avatar"
+            style="@style/Smile.ImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_head" />
+
+        <ImageView
+            android:id="@+id/set_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/avatar"
+            android:src="@drawable/icon_set"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/push_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/set_btn"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@+id/avatar"
+            android:src="@drawable/icon_push"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/showName"
+            style="@style/Smile.TextView._White"
+            android:layout_above="@+id/avatar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="78dp"
+            android:src="@drawable/me1" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="64dp"
+            android:layout_marginTop="78dp"
+            android:src="@drawable/me2" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/image2"
+            android:layout_alignTop="@+id/image3"
+            android:src="@drawable/me4" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/image1"
+            android:layout_below="@+id/image1"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/me3" />
+
+        
+
+    </RelativeLayout>
+
+</LinearLayout>

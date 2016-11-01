@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xpple.plant.view.SolarSystem xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xpple.plant"
+    android:id="@+id/solar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:position="center" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_selector_renwu"
+        android:tag="a" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_selector_mai"
+        android:tag="b" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_selector_dui"
+        android:tag="c" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_selector_qiandao"
+        android:tag="d" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_selector_yingyong"
+        android:tag="e" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_selector"
+        android:tag="f" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/btn_bg" />
+    </RelativeLayout>
+
+</com.xpple.plant.view.SolarSystem>

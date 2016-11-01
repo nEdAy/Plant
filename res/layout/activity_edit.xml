@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <include
+        android:id="@+id/layout_register"
+        layout="@layout/include_action_bar" />
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/selector_edittext"
+        android:ems="10"
+        android:gravity="left|top"
+        android:hint="请输入您售卖的宝贝名称"
+        android:inputType="text"
+        android:minLines="1"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip" />
+
+    <EditText
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/selector_edittext"
+        android:ems="10"
+        android:gravity="left|top"
+        android:hint="说说这件宝贝的故事吧"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/selector_edittext"
+        android:ems="10"
+        android:gravity="left|top"
+        android:hint="输入您预期的售价"
+        android:inputType="number"
+        android:minLines="1"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip" />
+
+    <EditText
+        android:id="@+id/transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/selector_edittext"
+        android:ems="10"
+        android:gravity="left|top"
+        android:hint="输入您预想的交易地点"
+        android:inputType="text"
+        android:minLines="1"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/pic_content"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/pica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/droidman01"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/picb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/pica"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/droidman08"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/commit_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_logout"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:text="发布"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

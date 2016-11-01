@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_transparent_bg" >
+
+        <RelativeLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_xia"
+            android:gravity="center_vertical"
+            android:baselineAligned="false" 
+            android:orientation="horizontal" >
+
+
+                <Button
+                    android:id="@+id/btn_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_half_transparent"
+                    android:drawableTop="@drawable/tab_message_btn"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="7dip"
+                    android:scaleType="matrix"
+                    android:text="@string/main_tab_recent"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_recent_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="138dp"
+                    android:background="@drawable/msg_tips"
+                    android:contentDescription="@string/ImageViewDescription"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/main_bottom"
+            android:background="@drawable/bg_main"
+            android:orientation="vertical" >
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_shang"
+                android:cacheColorHint="#00000000"
+                android:divider="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

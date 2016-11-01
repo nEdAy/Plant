@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+ <!-- 当按下时 -->
+    <item android:drawable="@drawable/main_renwu01" android:state_pressed="true"/>
+ <!-- 当按下时 -->
+    <item android:drawable="@drawable/main_renwu01" android:state_focused="true"/>
+
+    <item android:drawable="@drawable/main_renwu" android:state_focused="false"/>
+
+</selector>

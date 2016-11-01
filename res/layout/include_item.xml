@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical" >
+
+        <ImageSwitcher
+            android:id="@+id/switcher"
+            android:layout_width="fill_parent"
+            android:layout_height="270dp" >
+        </ImageSwitcher>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp" >
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="5dp"
+                android:layout_height="1dp"
+                android:layout_weight="25"
+                android:background="#b50202" />
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="5dp"
+                android:layout_height="1dp"
+                android:layout_weight="25"
+                android:background="#fff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="细节"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/transaction"
+        android:layout_toStartOf="@+id/transaction"
+        android:layout_margin="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nick"
+            android:textSize="18dp"
+            android:layout_below="@+id/transaction"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话联系"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/phone"
+            android:text="QQ联系" />
+
+        <TextView
+            android:id="@+id/weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/qq"
+            android:text="weixin" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="transaction"
+            android:textSize="16sp"
+            android:layout_below="@+id/price"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/item_action_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="4dip"
+            android:drawableLeft="@drawable/ic_action_comment"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="@color/base_color_text_white" />
+
+        <TextView
+            android:id="@+id/item_action_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="4dip"
+            android:layout_toLeftOf="@id/item_action_comment"
+            android:drawableLeft="@drawable/ic_action_share"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/base_color_text_white" />
+
+        <ImageView
+            android:id="@+id/item_action_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/item_action_love"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_action_fav_normal" />
+
+        <TextView
+            android:id="@+id/item_action_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="4dip"
+            android:layout_toLeftOf="@+id/item_action_fav"
+            android:drawableLeft="@drawable/user_delete"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/base_color_text_white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_action_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_action_share"
+            android:layout_alignBottom="@+id/item_action_share"
+            android:layout_toLeftOf="@+id/item_action_share"
+            android:drawableLeft="@drawable/ic_action_love"
+            android:gravity="center"
+            android:text="985赞"
+            android:textColor="@color/base_color_text_white" />
+    </RelativeLayout>
+
+</LinearLayout>

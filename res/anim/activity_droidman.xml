@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+
+    <item
+        android:drawable="@drawable/droidman01"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman02"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman03"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman04"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman05"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman06"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman07"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman08"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman09"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman10"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman11"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman12"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman13"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman14"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman15"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/droidman16"
+        android:duration="80"/>
+
+</animation-list>
